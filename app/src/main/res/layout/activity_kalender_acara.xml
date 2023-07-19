@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalenderAcaraActivity"
+    android:background="#ffffff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/semi_oval_shape_detail_menu" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="26dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:src="@drawable/ic_action_name"
+        app:tint="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvTitleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Kalender Acara"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15.5dp"/>
+
+</RelativeLayout>

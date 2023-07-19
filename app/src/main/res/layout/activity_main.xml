@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="184dp"
+            android:layout_height="162dp"
+            android:src="@drawable/logo_himma_mi_2022_crop"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Sistem Informasi Prodi MI\nManajemen Informatika"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

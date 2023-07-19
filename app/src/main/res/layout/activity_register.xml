@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".activity_home"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="152dp"
+        android:layout_height="134dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo_himma_mi_2022_crop" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Akun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <LinearLayout
+        android:id="@+id/boxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background_white"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Induk Mahasiswa"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etNIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Masukkan Nomor Induk Mahasiswa"
+            android:textColorHint="#858585"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#707070"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Masukkan Email"
+            android:textColorHint="#858585"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#707070"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Sandi"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Masukkan Kata Sandi"
+            android:textColorHint="#858585"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#707070"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:ems="10"
+            android:text="Daftar"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/registerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Sudah mempunyai akun? "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvLoginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Masuk disini."
+                android:textColor="#2377AE"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
